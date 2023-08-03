@@ -1,0 +1,128 @@
+@import url(../app.component.css);
+
+/*hero*/
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(assets/Naturaleza.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.hero_txt{
+    flex: 1;
+    padding: 60px;
+    text-align: center;
+    color: rgb(34, 7, 189);
+}
+.hero_img img{
+    flex: 1;
+    padding: 20px;
+    height: 200px;
+}
+
+/*card*/
+.card{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_txt {
+    padding: 75px;
+    text-align: center;
+    background-color: #fcc7fc;
+    background-image: linear-gradient(to top, #e7a4e7, rgb(176, 75, 201));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card_cards {
+    background-color: #ffffff;
+}
+.card_item {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #fcc7fc;
+    background-image: linear-gradient(to left, #eec0ee, rgb(176, 75, 201));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card_item:nth-child(2){
+    flex-direction: row-reverse;
+    background-color: #fcc7fc;
+    background-image: linear-gradient(to right, #eec0ee, rgb(176, 75, 201));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card_item_content, .card_item_image {
+    padding: 10px;
+}
+.card_item_image img{
+    height: 150px;
+    padding: 40px;
+}
+
+/* Sesion */
+.sesion {
+    text-align: center;
+    padding: 50px;
+    background-color: #fcc7fc;
+    background-image: linear-gradient(to top, #eec0ee, rgb(176, 75, 201));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sesion_botones {
+    margin-top: 20px;
+}
+.sesion_botones a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: rgb(147, 23, 178);
+    color: #fff;
+    border-radius: 5px;
+}
+.sesion_botones a:hover {
+    background-color: #0056b3;
+    transition: all 0.5s;
+}
+
+/*footer*/
+footer{
+    background-color: darkslategrey;
+    color: #b4e1ff;
+    text-align: center;
+    padding: 5px 0px 20px 0px
+}
+footer div h3{
+    padding-top: 15px;
+}
+footer div i{
+    /* text-decoration: none; */
+    padding: 5px;
+    text-transform: uppercase;
+    /* color: rgb(3, 108, 255); */
+    /* font-size: 20px; */
+    /* color: rgb(255, 255, 255);*/
+}
+
+
+
+@media (max-width: 860px) {
+    .hero {
+        flex-direction: column;
+    }
+    .card_item{
+        flex-direction: column;
+    }
+    .card_item:nth-child(2){
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px) {
+    .hero_img img{
+        height: 100px;
+    }
+}

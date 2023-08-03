@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-@import url(../app/home/home.css);
 body{
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -7,6 +6,7 @@ body{
     color: snow;
     /*background-color: #f7ddda;*/
 }
+
 header{
     background-color: #8b008b;
     background-image: linear-gradient(to bottom, #8b008b, #483d8b);
@@ -53,11 +53,12 @@ header nav a:hover{
     background-color: #0056b3;
     transition: all 0.5s;
 }
+
 footer{
     background-color: darkslategrey;
     color: #b4e1ff;
     text-align: center;
-    padding: 5px 0px 20px 0px;
+    padding: 5px 0px 20px 0px
 }
 footer div i{
     text-decoration: none;
